@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
-from sqrEq import sqrEquation
+from sqreq import sqr_eq
 
 
 def close():
@@ -14,7 +14,7 @@ def calc():
     if A == 0.0:
         tk.messagebox.showwarning('Error', 'Division by zero!')
     else:
-        lbl_result.configure(text=sqrEquation(A, B, C))
+        lbl_result.configure(text=sqr_eq(A, B, C))
 
 
 window = tk.Tk()
